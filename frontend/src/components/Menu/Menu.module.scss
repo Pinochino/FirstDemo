@@ -1,0 +1,30 @@
+.Menu {
+  padding-top: 32px;
+}
+.wrapper {
+  height: 58px;
+  display: inline-flex;
+  align-content: center;
+  width: 100%;
+}
+.logo {
+  width: 176px;
+  height: 28px;
+}
+.menu-body {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Menu .uk-width-1-3\@s {
+  width: calc(70% / 3);
+}
+
+.panel-header-bottom {
+    width: 100%;
+}
+.MenuBottom {
+    height: 52px;
+    display: inline-flex;
+    justify-content: center;
+}
