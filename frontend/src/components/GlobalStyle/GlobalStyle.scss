@@ -1,15 +1,29 @@
-@import 'normalize.css';
+@import "normalize.css";
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
 html {
     font-size: 62.5%;
 }
 
-:root{
-    --primary-color: #0063D1;
+:root {
+    --primary-color: #0063d1;
     --text-color: #444;
     --primary-background: #f9f9f9;
-    
 }
+
+// Fonts style
+@font-face {
+    font-family: Rubik, sans-serif;
+    src: url("../../assets/fonts/WooCommerce.woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Rubik, sans-serif;
+    src: url("../../assets/fonts/star.woff");
+    font-weight: 400;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -17,11 +31,11 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
     text-rendering: optimizeSpeed;
     font-style: normal;
     font-size: 1.6rem;
-}   
+}
 
 // button,
 // input,
@@ -33,10 +47,16 @@ a {
     color: var(--text-color);
     text-decoration: none;
 }
+
 .uk-grid {
     margin: 0;
     padding: 0;
 }
-.uk-grid > *{
+
+.uk-grid>* {
     padding: 0;
+}
+
+.container-1400 {
+    min-width: 1400px;
 }

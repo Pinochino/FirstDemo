@@ -7,8 +7,8 @@ import { IoBagOutline } from "react-icons/io5";
 const cx = classNames.bind(style);
 function MenuBottom() {
   return (
-    <div className={cx("MenuBottom")}>
-      <div className={cx("Deparments")}>
+    <div className={cx("MenuBottom")} data-uk-grid>
+      <div className={cx("Department")}>
         <span>
           {" "}
           <FiAlignJustify />
@@ -20,7 +20,11 @@ function MenuBottom() {
       </div>
       <div className={cx("Search")}>
         <input placeholder="Search for products" />
-        <button>
+        <div className={cx('select')}>
+          <span>All Categories</span>
+          <FiChevronDown />
+        </div>
+        <button type="submit">
           <CiSearch />
         </button>
       </div>

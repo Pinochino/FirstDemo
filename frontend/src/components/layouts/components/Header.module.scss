@@ -1,14 +1,13 @@
 .Header {
   --text-color: #444444;
-}
-.panel-header-top {
+  }
+  .panel-header-top {
+  background-color: #F9F9F9;
   display: flex;
   justify-content: space-around;
-  background-color: white;
   line-height: 41px;
-  min-width: 1392px;
-  padding: 0 72px;
-  margin: 0 70px;
+  padding: 0 20rem;
+
 
   > *:not(:last-child)::after {
     position: absolute;
@@ -16,9 +15,12 @@
     width: 1px;
     height: 20px;
     background-color: var(--text-color);
-    color: currentColor;
     font-size: 1.5rem;
-    font-weight: 300;
     transform: translate(50px, 10px);
   }
+   > * {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: currentColor;
+   }
 }
